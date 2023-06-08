@@ -60,14 +60,14 @@ fields[4].onblur = function () {
         creatspan.appendChild(isGood);
         let creatEX = document.createElement('img');
         creatEX.classList.add('exclamation');
-        creatEX.setAttribute('src', '/imag/ex2.png')
+        creatEX.setAttribute('src', 'https://cdn-icons-png.flaticon.com/128/10308/10308693.png')
         creatspan.appendChild(creatEX)
     } else if (theResalt === 0) {
         let isGood = document.createTextNode(' سيئ ');
         creatspan.appendChild(isGood);
         let creatEX = document.createElement('img');
         creatEX.classList.add('exclamation');
-        creatEX.setAttribute('src', '/imag/ex2.png')
+        creatEX.setAttribute('src', 'https://cdn-icons-png.flaticon.com/128/10308/10308693.png')
         creatspan.appendChild(creatEX)
     }
 
