@@ -55,7 +55,7 @@ fields[4].onblur = function () {
     } else if (theResalt === 4) {
         let isVeryGood = document.createTextNode(' جيد جداَ ');
         creatspan.appendChild(isVeryGood);
-    } else if (theResalt < 3) {
+    } else if (theResalt <= 3) {
         let isGood = document.createTextNode(' جيد ');
         creatspan.appendChild(isGood);
         let creatEX = document.createElement('img');
