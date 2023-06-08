@@ -1,0 +1,126 @@
+:root {
+    --input-backGround-color-first: #e7e7e7;
+    --input-border-color-first: #dbdada;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+main {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width:450px) {
+    main {
+        width: 90%;
+    }
+}
+main input:first-child {
+    background-color: #f1f1f1;
+    border: #e9e9e9 1px solid;
+    border-radius: 7px;
+    padding: 5px 10px;
+    outline: none;
+}
+main input:first-child:focus {
+    background-color: rgb(242, 245, 248);
+}
+
+.card ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card ul li input {
+    width: calc(100% - 15px);
+    background-color: var(--input-backGround-color-first);
+    border: var(--input-border-color-first) 1px solid;
+    text-align: center;
+    padding: 4px 1px;
+    border-radius: 7px;
+}
+
+.the-resalt {
+    position: relative;
+}
+
+.exclamation {
+    position: absolute;
+    right: -40%;
+    top: 50%;
+    transform: translate(40%, -50%);
+    width: 20px;
+    cursor: pointer;
+}
+
+/* Replace */
+.replace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e7e7;
+    border: none;
+    padding: 3px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.replace img{
+    width: 30px;
+}
+
+/* The Massege */
+.msg {
+    position: absolute;
+    background-color: #e9b3b3dc;
+    border-radius: 7px;
+    padding: 30px;
+}
+.msg .img-msg {
+    position: relative;
+}
+
+.msg img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -108%);
+    width: 50px;
+}
+
+.msg span {
+    background-color: white;
+    display: block;
+    text-align: center;
+    margin-top: 8px;
+    border-radius: 7px;
+    cursor: pointer;
+}
